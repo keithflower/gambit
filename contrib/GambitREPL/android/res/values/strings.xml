@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gambit for Android</string>
+
+    <!-- Crash report dialog -->
+    <string name="crash_subject">Crash: Gambit REPL v{0} on {1} / {2} / {3}</string>
+    <string name="crash_preamble">Please describe what you were doing just before the crash if possible, and then press Send:</string>
+    <string name="crashtitle">Gambit for Android died...</string>
+    <string name="crashed">Sorry, Gambit for Android encountered a problem and had to close. Would you like to send a crash report, which may help developers fix the problem?</string>
+    <string name="report">Report</string>
+    <string name="close">Close</string>
+    <string name="getting_log">Getting error log...</string>
+    <string name="starting_email">Starting email client...</string>
+    <string name="author_email">keith@keithflower.org</string>
+    <string name="unknown_version">UNKNOWN</string>
+    <!-- {0} = version, {1} = device model number -->
+    <string name="email_subject">Gambit REPL v{0} on {1} / {2} / {3}</string>
+    <string name="get_log_failed">Could not read the error log. Please send an ordinary bug report to {0}, describing in as much detail as possible what you did and what happened, so this problem can be fixed.</string>
+</resources>

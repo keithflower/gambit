@@ -1,0 +1,11 @@
+export ANDROID_ROOT=/Users/keith/android-ndk-r7/
+export PATH=$PATH:$ANDROID_ROOT/toolchains/arm-linux-androideabi-4.4.3/prebuilt/darwin-x86/bin/
+export LD=arm-linux-androideabi-ld
+export AR=arm-linux-androideabi-ar
+export STRIP=arm-linux-androideabi-strip
+export RANLIB=arm-linux-androideabi-ranlib
+export CC=arm-linux-androideabi-gcc
+export CXX=arm-linux-androideabi-g++
+export PREFIX=$ANDROID_ROOT/../gambc
+./configure --enable-single-host --prefix=$PREFIX -host=arm-eabi CPPFLAGS="-DANDROID -I$ANDROID_ROOT/platforms/android-5/arch-arm/usr/include/ -fno-short-enums" CFLAGS="-DANDROID -fno-short-enums -I$ANDROID_ROOT/platforms/android-5/arch-arm/usr/include/ -nostdlib" LDFLAGS="-Wl,-rpath-link=$ANDROID_ROOT/platforms/android-5/arch-arm/usr/lib/ -L$ANDROID_ROOT/platforms/android-5/arch-arm/usr/lib" LIBS="-lc -ldl -lgcc"
+make

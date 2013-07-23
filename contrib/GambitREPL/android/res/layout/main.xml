@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewswitcher"
+    android:orientation="vertical"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flipper"
+    android:layout_height="fill_parent" 
+    android:layout_width="fill_parent"> 
+<org.keithflower.gambit.GambitWebView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+/>
+<org.keithflower.gambit.GambitWebView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wikiview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+/>
+<org.keithflower.gambit.GambitWebView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/helpview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+/>
+<org.keithflower.gambit.GambitWebView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+/>
+<org.keithflower.gambit.ReplWindow
+        android:id="@+id/replview"
+        android:layout_width="fill_parent"
+        android:inputType="textMultiLine"
+        android:gravity="bottom"
+        android:layout_weight="1" 
+        android:layout_height="fill_parent"/>
+</ViewFlipper>
+   <ImageButton
+        android:id="@+id/cancelFloat"
+        android:visibility="invisible"
+        android:src="@drawable/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:background="@null"
+        android:padding="0dip" 
+        android:layout_margin="0dip"  
+/> 
+   />
+</FrameLayout>

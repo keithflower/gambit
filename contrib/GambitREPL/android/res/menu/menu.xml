@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:title="REPL" android:id="@+id/repl" showAsAction="ifRoom|withText"></item>
+<item android:title="Repo" android:id="@+id/repo" showAsAction="ifRoom|withText"></item>
+<item android:title="Edit" android:id="@+id/scripts" showAsAction="ifRoom"></item>
+<item android:title="Share" android:id="@+id/share" showAsAction="ifRoom"></item>
+<item android:title="Help" android:id="@+id/help" showAsAction="ifRoom"></item>
+<item android:title="About" android:id="@+id/about" showAsAction="ifRoom"></item>
+</menu>
