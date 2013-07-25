@@ -183,3 +183,4 @@ contrib/GambitREPL/android/bin/
 contrib/GambitREPL/android/libs/
 contrib/GambitREPL/android/obj/
 contrib/GambitREPL/android/program_.c
+!contrib/GambitREPL/android/makefile
