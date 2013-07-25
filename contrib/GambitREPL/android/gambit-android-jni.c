@@ -133,14 +133,12 @@ void Java_org_keithflower_gambit_Gui_initGambit(JNIEnv *env, jobject obj)
   ___UCS_2STRING *ucs2_argv;
   int last_dir_sep;
   int i;
-logv("init 1");
 
   if (___NONNULLCHARSTRINGLIST_to_NONNULLUCS_2STRINGLIST
         (main_argv,
          &ucs2_argv)
       != ___FIX(___NO_ERR))
     exit(1);
-logv("init 1");
 
   last_dir_sep = 0;
   i = 0;
@@ -151,7 +149,6 @@ logv("init 1");
         last_dir_sep = i;
       i++;
     }
-logv("init 1");
 
   for (i=0; i<last_dir_sep; i++)
     ucs2_gambcdir[i] = ucs2_argv[0][i];
@@ -171,7 +168,6 @@ logv("init 1");
        << ___DEBUG_SETTINGS_ERROR_SHIFT);
 
   ___setup_params_struct setup_params;
-logv("init 1");
 
   ___setup_params_reset (&setup_params);
   setup_params.version = ___VERSION;
